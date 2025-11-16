@@ -1,0 +1,139 @@
+.admin-alerts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page-header p {
+  color: #718096;
+  margin-top: 0.5rem;
+}
+
+.alerts-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.alert-form-card,
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.alert-form-card h3,
+.info-card h3 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-item strong {
+  color: #2d3748;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.info-item ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.info-item li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.type-info,
+.type-success,
+.type-warning,
+.type-error,
+.type-alert {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.type-info {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.type-success {
+  background: #f0fdf4;
+  color: #22543d;
+}
+
+.type-warning {
+  background: #fffaf0;
+  color: #744210;
+}
+
+.type-error {
+  background: #fff5f5;
+  color: #742a2a;
+}
+
+.type-alert {
+  background: #fff5f5;
+  color: #742a2a;
+}
+
+.btn-send {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.unauthorized {
+  text-align: center;
+  padding: 3rem;
+  color: #f56565;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .alerts-container {
+    grid-template-columns: 1fr;
+  }
+}
+

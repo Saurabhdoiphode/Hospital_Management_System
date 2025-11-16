@@ -1,0 +1,133 @@
+.laboratory-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.request-header h4 {
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.request-header p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.request-tests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.test-item.completed {
+  background: #f0fdf4;
+  border-left: 3px solid #48bb78;
+}
+
+.test-info {
+  flex: 1;
+}
+
+.test-name {
+  font-weight: 600;
+  color: #2d3748;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.test-results {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.result-values,
+.result-notes {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.result-values pre {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.result-notes {
+  color: #4a5568;
+}
+
+.result-date {
+  font-size: 0.75rem;
+  color: #718096;
+  margin-top: 0.5rem;
+}
+
+.test-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.test-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-small:hover {
+  background: #3182ce;
+}
+

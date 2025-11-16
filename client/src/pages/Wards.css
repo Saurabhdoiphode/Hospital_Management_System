@@ -1,0 +1,140 @@
+.wards-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ward-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.ward-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ward-header h3 {
+  color: #2d3748;
+}
+
+.ward-number {
+  padding: 0.25rem 0.75rem;
+  background: #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ward-stats {
+  margin-bottom: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-item svg {
+  font-size: 2rem;
+  color: #4299e1;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.ward-beds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bed-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.bed-item.status-available {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.bed-item.status-occupied {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.bed-more {
+  padding: 0.5rem 0.75rem;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+.admissions-section {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h3 {
+  color: #2d3748;
+}
+
+.admissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admission-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.admission-info h4 {
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.admission-info p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+

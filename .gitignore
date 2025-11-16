@@ -1,0 +1,41 @@
+node_modules/
+.env
+.DS_Store
+*.log
+dist/
+build/
+.vscode/
+.idea/
+
+# Client and server node modules
+client/node_modules/
+
+# Uploads and exports
+uploads/
+exported_*
+
+# Build caches and caches
+client/build/
+server/build/
+client/.cache/
+
+# Logs
+logs
+*.log
+
+# OneDrive temp files
+~$*
+~*.tmp
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Sensitive or local keys
+server/keys/
+*.local
+

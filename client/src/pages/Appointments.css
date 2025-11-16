@@ -1,0 +1,150 @@
+.appointments-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.appointments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.appointment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.appointment-date-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.appointment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.appointment-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.appointment-info svg {
+  margin-top: 0.25rem;
+  color: #718096;
+}
+
+.appointment-info strong {
+  color: #2d3748;
+  display: block;
+}
+
+.appointment-info p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.appointment-reason {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.appointment-actions {
+  margin-top: auto;
+}
+
+.status-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-scheduled {
+  background-color: #bee3f8;
+  color: #2b6cb0;
+}
+
+.status-confirmed {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-in-progress {
+  background-color: #fbd38d;
+  color: #744210;
+}
+
+.status-completed {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.status-cancelled {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.disabled-input {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f7fafc;
+  color: #4a5568;
+  cursor: not-allowed;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .appointments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

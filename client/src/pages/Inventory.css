@@ -1,0 +1,108 @@
+.inventory-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.alert-low-stock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #fef5e7;
+  color: #744210;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.inventory-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table thead {
+  background-color: #f7fafc;
+}
+
+.inventory-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.inventory-table td {
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+.low-stock-row {
+  background-color: #fef5e7 !important;
+}
+
+.item-description {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-top: 0.25rem;
+}
+
+.reorder-warning {
+  font-size: 0.75rem;
+  color: #c05621;
+  margin-top: 0.25rem;
+}
+
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-in-stock {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-low-stock {
+  background-color: #fbd38d;
+  color: #744210;
+}
+
+.status-out-of-stock {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.status-expired {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .inventory-table {
+    font-size: 0.85rem;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+

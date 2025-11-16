@@ -1,0 +1,28 @@
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  color: #4a5568;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #2d3748;
+}
+
+.dark .dark-mode-toggle {
+  color: #e2e8f0;
+}
+
+.dark .dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
