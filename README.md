@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hospital Management System
 
 A comprehensive, modern Hospital Management System built with React and Node.js/Express. This system provides a complete solution for managing hospital operations including patient management, appointments, medical records, billing, inventory, and analytics.
@@ -303,7 +302,3 @@ For support, email support@hospital.com or create an issue in the repository.
 ---
 
 Built with ❤️ for efficient hospital management
-
-=======
-# Hospital_Management_System
->>>>>>> e3c0f89eddbe276c59a7fc070e30bee5190c9b39

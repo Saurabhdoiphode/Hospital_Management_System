@@ -1,0 +1,14 @@
+* text=auto
+*.sh text eol=lf
+*.md text
+*.yml text
+*.yaml text
+*.json text
+*.js text
+*.css text
+*.html text
+*.py text
+*.java text
+client/* text=auto
+server/* text=auto
+*.bat text eol=crlf
