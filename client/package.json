@@ -2,6 +2,7 @@
   "name": "hospital-management-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saurabhdoiphode.github.io/Hospital_Management_System",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

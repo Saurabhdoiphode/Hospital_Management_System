@@ -48,7 +48,7 @@ function App() {
     <ThemeProvider>
       <I18nProvider>
         <AuthProvider>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
