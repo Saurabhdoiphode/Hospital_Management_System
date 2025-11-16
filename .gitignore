@@ -1,3 +1,10 @@
+# Ignore accidental root-level build artifacts copied for Pages
+/index.html
+/404.html
+/asset-manifest.json
+/manifest.json
+/service-worker.js
+/static/
 node_modules/
 .env
 .DS_Store
