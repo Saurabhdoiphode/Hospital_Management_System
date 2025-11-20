@@ -12,9 +12,9 @@ services:
       - key: PORT
         value: 10000
       - key: MONGODB_URI
-        value: "REPLACE_WITH_YOUR_MONGODB_URI"
+        fromSecret: MONGODB_URI
       - key: JWT_SECRET
-        generateValue: true
+        fromSecret: JWT_SECRET
       - key: CORS_ORIGIN
         fromService:
           type: static_site

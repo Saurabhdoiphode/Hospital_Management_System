@@ -35,6 +35,13 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  const state = (mongoose.connection && mongoose.connection.readyState) || 0;
+  const states = { 0: 'disconnected', 1: 'connected', 2: 'connecting', 3: 'disconnecting' };
+  res.json({ ok: true, db: states[state] });
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/patients', require('./routes/patients'));
