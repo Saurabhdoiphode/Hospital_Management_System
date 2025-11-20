@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: hospital-api
+    env: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        value: "REPLACE_WITH_YOUR_MONGODB_URI"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        fromService:
+          type: static_site
+          name: hospital-web
+          property: url
+
+  - type: static_site
+    name: hospital-web
+    buildCommand: cd client && npm ci && npm run build
+    publishPath: client/build
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PUBLIC_URL
+        value: "/"
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: hospital-api
+          property: url
