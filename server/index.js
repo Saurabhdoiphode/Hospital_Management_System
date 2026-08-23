@@ -63,8 +63,10 @@ mongoose.connect(MONGODB_URI, {
   console.log('⚠️ MongoDB not connected/offline. Running in-memory database engine mode.');
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Hospital Management System Server running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Hospital Management System Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;
