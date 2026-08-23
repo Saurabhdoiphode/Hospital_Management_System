@@ -66,3 +66,5 @@ mongoose.connect(MONGODB_URI, {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Hospital Management System Server running on port ${PORT}`);
 });
+
+module.exports = app;
