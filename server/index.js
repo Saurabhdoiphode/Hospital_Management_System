@@ -9,7 +9,7 @@ dotenv.config({ path: '../.env' });
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital-management';
 
 // Middleware
@@ -63,6 +63,6 @@ mongoose.connect(MONGODB_URI, {
   console.log('⚠️ MongoDB not connected/offline. Running in-memory database engine mode.');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Hospital Management System Server running on port ${PORT}`);
 });
